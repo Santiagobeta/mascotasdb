@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "Nombre":"Toby",
+        "Tipo_Reporte":"Perdida",
+        "imagen": "http://localhost:3000/img/1toby.jpg"
+    },
+    {
+        "id": "2",
+        "Nombre":"Anubis",
+        "Tipo_Reporte":"Encontrada",
+        "imagen": "http://localhost:3000/img/2anubis.jpg"
+    },
+    {
+        "id": "3",
+        "Nombre":"Olguito",
+        "Tipo_Reporte":"Adopción",
+        "imagen": "http://localhost:3000/img/3olguito.jpg"
+    },
+    {
+        "id": "4",
+        "Nombre":"",
+        "Tipo_Reporte":"Encontrada",
+        "imagen": "http://localhost:3000/img/4nn.jpg"
+    },
+    {
+        "id": "5",
+        "Nombre":"",
+        "Tipo_Reporte":"Encontrada",
+        "imagen": "http://localhost:3000/img/5nn.jpg"
+    },
+    {
+        "id": "6",
+        "Nombre":"Sasha",
+        "Tipo_Reporte":"Perdida",
+        "imagen": "http://localhost:3000/img/6sasha.jpg"
+    },
+    {
+        "id": "7",
+        "Nombre":"Pandora",
+        "Tipo_Reporte":"Perdida",
+        "imagen": "http://localhost:3000/img/7pandora.jpg"
+    },
+    {
+        "id": "8",
+        "Nombre":"Princesa",
+        "Tipo_Reporte":"Perdida",
+        "imagen": "http://localhost:3000/img/8princesa.jpg"
+    },
+    {
+        "id": "9",
+        "Nombre":"Lupita",
+        "Tipo_Reporte":"Perdida",
+        "imagen": "http://localhost:3000/img/9lupita.jpg"
+    } 
+]

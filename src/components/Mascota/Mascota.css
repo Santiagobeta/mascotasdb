@@ -1,0 +1,12 @@
+.mascota {
+  background-color: #000000;
+}
+.mascota img {
+  width: 100%;
+}
+.mascota .info {
+  padding: 10px;
+}
+.mascota .info h2 {
+  margin: 0;
+}

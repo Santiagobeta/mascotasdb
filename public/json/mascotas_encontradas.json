@@ -1,0 +1,20 @@
+[
+    {
+        "id": "2",
+        "Nombre":"Anubis",
+        "Tipo_Reporte":"Encontrada",
+        "imagen": "http://localhost:3000/img/2anubis.jpg"
+    },
+    {
+        "id": "4",
+        "Nombre":"",
+        "Tipo_Reporte":"Encontrada",
+        "imagen": "http://localhost:3000/img/4nn.jpg"
+    },
+    {
+        "id": "5",
+        "Nombre":"",
+        "Tipo_Reporte":"Encontrada",
+        "imagen": "http://localhost:3000/img/5nn.jpg"
+    } 
+]

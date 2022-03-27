@@ -1,0 +1,31 @@
+#mascotas_encontradas {
+  padding: 15px;
+}
+
+#mascotas_encontradas .agregar-mascotas_encontradas {
+  margin-bottom: 20px;
+}
+
+.grid-mascotas_encontradas {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .grid-mascotas_encontradas {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-mascotas_encontradas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .grid-mascotas_encontradas {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,62 @@
+header {
+  background-color: #ffffff;
+  position: relative;
+}
+header .container {
+  padding: 1px 0;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+/* Logo */
+.logo {
+  width: 200px;
+  margin-top: -10px;
+  margin-left: -30px;
+}
+
+/* Menú responsive */
+.btn-menu-responsive {
+  display: none;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.menu-responsive {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+.menu-responsive.open {
+  bottom: -180px; /* ¿cómo hacer para que este valor no este quemado? */
+}
+.menu-responsive ul li {
+  border-top: 1px solid rgb(0, 0, 0);
+}
+.menu-responsive ul li a {
+  display: block;
+  background-color: #000000;
+  border-radius: 0;
+  padding: 15px;
+}
+
+.btn-login {
+  margin: 30px 10px;
+  font-size: 20px;
+  color:#080808;
+}
+
+/* Menú mobile */
+@media screen and (max-width: 768px) {
+  header {
+    padding-bottom: 0;
+  }
+  .btn-menu-responsive {
+    display: block;
+  }
+  .menu-responsive {
+    display: block;
+  }
+}
