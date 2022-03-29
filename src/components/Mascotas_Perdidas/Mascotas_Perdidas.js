@@ -2,6 +2,7 @@ import "./Mascotas_Perdidas.css";
 import Mascota from "../Mascota/Mascota";
 import { useEffect, useState, useContext } from "react";
 import { UserContext } from "../../contexts/UserContext";
+import Busqueda from "../Busqueda/Busqueda";
 
 function Mascotas_perdidas() {
   const [mascotas_perdidas, setMascotas_perdidas] = useState([]);
@@ -22,6 +23,9 @@ function Mascotas_perdidas() {
 
   return (
     <section id="mascotas_perdidas">
+      <div>
+      <Busqueda></Busqueda>
+      </div>
       <div className="container">
         <h1>Mascotas</h1>
         {isUserLoggedIn ? (

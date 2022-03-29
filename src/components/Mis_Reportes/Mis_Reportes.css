@@ -1,31 +1,37 @@
-#mascotas_adopcion{
+#mis_Reportes {
   padding: 15px;
 }
 
-#mascotas_adopcion .agregar-mascotas_adopcion {
+#mis_Reportes .agregar-mis_Reportes {
   margin-bottom: 20px;
 }
 
-.grid-mascotas_adopcion {
+.grid-mis_Reportes {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 30px;
 }
 
 @media screen and (max-width: 992px) {
-  .grid-mascotas_adopcion {
+  .grid-mis_Reportes {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media screen and (max-width: 768px) {
-  .grid-mascotas_adopcion {
+  .grid-mis_Reportes {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media screen and (max-width: 576px) {
-  .grid-mascotas_adopcion {
+  .grid-mis_Reportes {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .grid-mis_Reportes {
     grid-template-columns: 1fr 1fr;
   }
 }

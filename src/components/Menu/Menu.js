@@ -17,7 +17,7 @@ function Menu() {
       </ul>
       <ul className="menu flex">
         <li>
-          <Link to="Mascotas_Adopcion">Mis reportes</Link>
+          <Link to="Mis_Reportes">Mis reportes</Link>
         </li>
         <li>
           <Link to="Mascotas_Encontradas">¿Cómo hacer reportes?</Link>

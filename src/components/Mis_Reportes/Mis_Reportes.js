@@ -1,36 +1,37 @@
-import "./Mascotas_Adopcion.css";
+import "./Mis_Reportes.css";
 import Mascota from "../Mascota/Mascota";
 import { useEffect, useState, useContext } from "react";
 import { UserContext } from "../../contexts/UserContext";
+import Busqueda from "../Busqueda/Busqueda";
 
-function Mascotas_adopcion() {
-  const [mascotas_adopcion, setMascotas_adopcion] = useState([]);
+function Mis_Reportes() {
+  const [mis_Reportes, setMis_Reportes] = useState([]);
 
   const { user } = useContext(UserContext);
   const isUserLoggedIn = user ? true : false;
   console.log("isUserLoggedIn", isUserLoggedIn);
 
-  const cargarMascotas_adopcion = () => {
-    fetch("http://localhost:3000/json/mascotas_adopcion.json")
+  const cargarMis_Reportes = () => {
+    fetch("http://localhost:3000/json/mascotas_encontradas.json")
       .then((respuesta) => respuesta.json())
-      .then((data) => setMascotas_adopcion(data));
+      .then((data) => setMis_Reportes(data));
   };
 
   useEffect(() => {
-    cargarMascotas_adopcion();
+    cargarMis_Reportes();
   }, []);
 
   return (
-    <section id="mascotas_adopcion">
+    <section id="mis_Reportes">
       <div className="container">
         <h1>Mascotas</h1>
         {isUserLoggedIn ? (
-          <button className="btn btn-dark agregar-mascotas_adopcion">
-            Agregar Mascota adopcion
+          <button className="btn btn-dark agregar-mis_Reportes">
+            Agregar Reporte
           </button>
         ) : null}
-        <div className="grid-mascotas_adopcion">
-          {mascotas_adopcion.map((mascota) => (
+        <div className="grid-mis_Reportes">
+          {mis_Reportes.map((mascota) => (
             <Mascota key={mascota.id} data={mascota}></Mascota>
           ))}
         </div>
@@ -39,4 +40,4 @@ function Mascotas_adopcion() {
   );
 }
 
-export default Mascotas_adopcion;
+export default Mis_Reportes;

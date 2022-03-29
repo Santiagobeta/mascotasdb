@@ -3,6 +3,7 @@ import Mascotas from "./components/Mascotas/Mascotas";
 import Mascotas_Perdidas from "./components/Mascotas_Perdidas/Mascotas_Perdidas";
 import Mascotas_Encontradas from "./components/Mascotas_Encontradas/Mascotas_Encontradas";
 import Mascotas_Adopcion from "./components/Mascotas_Adopcion/Mascotas_Adopcion";
+import Mis_Reportes from "./components/Mis_Reportes/Mis_Reportes";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Template from "./components/template/Template";
 
@@ -24,8 +25,10 @@ function App() {
             <Route path="mascotas_perdidas" element={<Mascotas_Perdidas />} />
             <Route path="mascotas_encontradas" element={<Mascotas_Encontradas />} />
             <Route path="mascotas_adopcion" element={<Mascotas_Adopcion />} />
+            <Route path="mascotas" element={<Mascotas />} />
             <Route path="series" element={<></>} />
             <Route path="login" element={<Login></Login>} />
+            <Route path="mis_reportes" element={<Mis_Reportes />} />
           </Route>
           <Route path="*" element={<Navigate to="/error" replace />} />
         </Routes>
