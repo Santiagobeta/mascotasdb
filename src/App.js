@@ -11,7 +11,8 @@ import Template from "./components/template/Template";
 import Login from "./components/Login/Login";
 import { UserContext } from "./contexts/UserContext";
 import { useState } from "react";
-
+import Hacer_Reporte from "./components/Hacer_Reporte/Hacer_Reporte";
+import Hacer_Busqueda from "./components/Hacer_Busqueda/Hacer_Busqueda";
 
 function App() {
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
@@ -31,6 +32,8 @@ function App() {
             <Route path="series" element={<></>} />
             <Route path="login" element={<Login></Login>} />
             <Route path="mis_reportes" element={<Mis_Reportes />} />
+            <Route path="hacer_reporte" element={<Hacer_Reporte />} />
+            <Route path="hacer_busqueda" element={<Hacer_Busqueda />} />
           </Route>
           <Route path="*" element={<Navigate to="/error" replace />} />
         </Routes>

@@ -20,10 +20,10 @@ function Menu() {
           <Link to="Mis_Reportes">Mis reportes</Link>
         </li>
         <li>
-          <Link to="Mascotas_Encontradas">¿Cómo hacer reportes?</Link>
+          <Link to="Hacer_Reporte">¿Cómo hacer reportes?</Link>
         </li>
         <li>
-          <Link to="Mascotas_Perdidas">¿Cómo hacer búsquedas?</Link>
+          <Link to="Hacer_Busqueda">¿Cómo hacer búsquedas?</Link>
         </li>
       </ul>
     </div>

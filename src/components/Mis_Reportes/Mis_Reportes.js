@@ -2,8 +2,7 @@ import "./Mis_Reportes.css";
 import Mascota from "../Mascota/Mascota";
 import { useEffect, useState, useContext } from "react";
 import { UserContext } from "../../contexts/UserContext";
-import { Link } from "react-router-dom";
-import Busqueda from "../Busqueda/Busqueda";
+
 import Agregar from "../Agregar/Agregar";
 
 function Mis_Reportes() {
@@ -49,10 +48,6 @@ function Mis_Reportes() {
             Borrar Reporte
           </button>
         ) : null}
-      </div>
-      <div>
-        <h1> ¿Cómo kjjj?</h1>
-        <p> j fkjaj  kj aj a afjd djkjfd dfkfj ajd ajd ajd ajd </p>
       </div>
     </section>
   );
