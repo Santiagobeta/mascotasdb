@@ -4,6 +4,7 @@ import Mascotas_Perdidas from "./components/Mascotas_Perdidas/Mascotas_Perdidas"
 import Mascotas_Encontradas from "./components/Mascotas_Encontradas/Mascotas_Encontradas";
 import Mascotas_Adopcion from "./components/Mascotas_Adopcion/Mascotas_Adopcion";
 import Mis_Reportes from "./components/Mis_Reportes/Mis_Reportes";
+import Agregar from "./components/Agregar/Agregar";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Template from "./components/template/Template";
 
@@ -19,6 +20,7 @@ function App() {
     <BrowserRouter>
       <UserContext.Provider value={{ user, setUser }}>
         <Routes>
+          <Route path="agregar_reporte" element={<Agregar/>} />
           <Route element={<Template />}>
             <Route path="/" element={<Navigate to="/mascotas" replace />} />
             <Route path="mascotas" element={<Mascotas />} />

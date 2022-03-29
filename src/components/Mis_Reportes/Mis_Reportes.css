@@ -5,6 +5,10 @@
 #mis_Reportes .agregar-mis_Reportes {
   margin-bottom: 20px;
 }
+#mis_Reportes .botones-mis_Reportes {
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
 
 .grid-mis_Reportes {
   display: grid;
@@ -34,4 +38,12 @@
   .grid-mis_Reportes {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+h1{
+  margin-left: 30px;
+}
+
+p{
+  margin-left: 30px;
 }

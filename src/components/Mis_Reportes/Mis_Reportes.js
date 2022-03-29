@@ -2,7 +2,9 @@ import "./Mis_Reportes.css";
 import Mascota from "../Mascota/Mascota";
 import { useEffect, useState, useContext } from "react";
 import { UserContext } from "../../contexts/UserContext";
+import { Link } from "react-router-dom";
 import Busqueda from "../Busqueda/Busqueda";
+import Agregar from "../Agregar/Agregar";
 
 function Mis_Reportes() {
   const [mis_Reportes, setMis_Reportes] = useState([]);
@@ -24,17 +26,33 @@ function Mis_Reportes() {
   return (
     <section id="mis_Reportes">
       <div className="container">
-        <h1>Mascotas</h1>
+        <h1>Mis reportes</h1>
         {isUserLoggedIn ? (
-          <button className="btn btn-dark agregar-mis_Reportes">
-            Agregar Reporte
-          </button>
+          <div>
+          <Agregar></Agregar>
+          </div>
         ) : null}
+        <br></br>
+        <br></br>
+        <br></br>
         <div className="grid-mis_Reportes">
           {mis_Reportes.map((mascota) => (
             <Mascota key={mascota.id} data={mascota}></Mascota>
           ))}
-        </div>
+        </div>{isUserLoggedIn ? (
+          <button className="btn btn-dark botones-mis_Reportes">
+            Editar Reporte
+          </button>
+        ) : null}
+        {isUserLoggedIn ? (
+          <button className="btn btn-dark botones-mis_Reportes">
+            Borrar Reporte
+          </button>
+        ) : null}
+      </div>
+      <div>
+        <h1> ¿Cómo kjjj?</h1>
+        <p> j fkjaj  kj aj a afjd djkjfd dfkfj ajd ajd ajd ajd </p>
       </div>
     </section>
   );
